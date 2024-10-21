@@ -1,0 +1,48 @@
+/* Side menu hidden by default */
+.side-menu {
+    position: fixed;
+    top: 65px;
+    right: -300px; /* Hidden off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+/* Show the side menu when it's active */
+.side-menu.active {
+    right: 0; /* Slide in from the right */
+}
+
+#toggleMenuBtn:hover {
+    scale: 1.05;
+}
+
+.cart {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+}
+
+.cart-title {
+    font-size: large;
+}
+
+.shoppingProducts {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detalles {
+    font-size: small;
+}
+
+.detalles h3 {
+    font-size: medium;
+}
